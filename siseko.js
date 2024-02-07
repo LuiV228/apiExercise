@@ -1,6 +1,6 @@
 // Shuffle an Array:
 // shuffles the elements of an array randomly.
-function shuffleArray(array) {
+function Array(array) {
   for (let i = array.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
@@ -13,7 +13,7 @@ let array = [1, 2, 3, 4, 5];
 
 // Flatten an Array:
 // takes a nested array and flattens it into a single array.
-function flattenArray(arr) {
+function Array(arr) {
   return arr.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenArray(val)) : acc.concat(val), []);
 }
 
@@ -23,8 +23,8 @@ let nestedArray = [1, [2, [3, 4], 5], 6];
 
 // Find Unique Values in an Array:
 // finds unique values in an array using the Set object.
-function findUniqueValues(arr) {
+function UniqueValues(arr) {
   return [...new Set(arr)];
 }
 let arr = [1, 2, 3, 1, 2, 4, 5];
-// console.log(findUniqueValues(array)); 
+// console.log(UniqueValues(array)); 
